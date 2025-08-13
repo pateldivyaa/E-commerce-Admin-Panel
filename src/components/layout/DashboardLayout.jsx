@@ -17,6 +17,7 @@ const DashboardLayout = () => {
       if (window.innerWidth < 1024) {
         setIsSidebarOpen(false)
       } else {
+        
         setIsSidebarOpen(true)
       }
     }
