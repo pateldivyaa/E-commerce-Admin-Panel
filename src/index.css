@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #6C63FF;
+  --secondary-color: #42C2B8;
+  --accent-color: #FF6B6B;
+  --success-color: #4CAF50;
+  --warning-color: #FFC107;
+  --error-color: #F44336;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply font-sans text-gray-800 bg-gray-50;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading font-semibold;
+  line-height: 1.2;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-2 focus:ring-primary-300 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 focus:ring-2 focus:ring-secondary-300 focus:ring-offset-2;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-500 text-white hover:bg-accent-600 focus:ring-2 focus:ring-accent-300 focus:ring-offset-2;
+  }
+  
+  .btn-outline {
+    @apply bg-white text-primary-600 border border-primary-600 hover:bg-primary-50 focus:ring-2 focus:ring-primary-300 focus:ring-offset-2;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-card p-6 shadow-card;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply bg-success-100 text-success-800;
+  }
+  
+  .badge-warning {
+    @apply bg-warning-100 text-warning-800;
+  }
+  
+  .badge-error {
+    @apply bg-error-100 text-error-800;
+  }
+  
+  .badge-info {
+    @apply bg-primary-100 text-primary-800;
+  }
+
+  .table-container {
+    @apply w-full overflow-x-auto rounded-lg shadow-sm;
+  }
+  
+  .table {
+    @apply min-w-full bg-white border-collapse;
+  }
+  
+  .table th {
+    @apply px-6 py-3 bg-gray-50 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-200;
+  }
+  
+  .table td {
+    @apply px-6 py-4 whitespace-nowrap text-sm border-b border-gray-200;
+  }
+  
+  .table tr:hover {
+    @apply bg-gray-50;
+  }
+
+  .animate-fade-in {
+    @apply animate-fade-in;
+  }
+  
+  .animate-slide-up {
+    @apply animate-slide-up;
+  }
+  
+  .animate-slide-down {
+    @apply animate-slide-down;
+  }
+  
+  .animate-slide-in-right {
+    @apply animate-slide-in-right;
+  }
+}

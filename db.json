@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": "1747163449028",
+      "name": "Divya",
+      "email": "dp@123gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "profilePicture": null,
+      "createdAt": "2025-05-13T19:10:49.028Z",
+      "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjZmYzg0ZmJlMDVmZWM2NzZjMTg4NSIsImVtYWlsIjoiZHBAMTIzZ21haWwuY29tIiwiaWF0IjoxNzQ3Mzg1NDc2LCJleHAiOjE3NDczODkwNzZ9.poCe4Ip67aXq5880sYB1UhepbPbydt5c5qSsbXVZDMc"
+    }
+
+  ]
+}
